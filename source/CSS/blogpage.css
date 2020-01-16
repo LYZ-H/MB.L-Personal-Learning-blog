@@ -1,0 +1,265 @@
+.blogcontainer{
+    border: 3px solid rgb(7, 85, 138);
+    margin: 40px auto;
+}
+.blogname{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: rgb(33, 62, 228);
+    margin-top: 16px;
+}
+.usercontainer{
+    border: 2px solid black;
+}
+.blogtitle{
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.list-group{
+    opacity: 0.9;
+    padding-right: 0;
+}
+.row{
+    margin: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+#loggedna{
+    margin-top: 8px !important;
+    display: none;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 20%;
+}
+#loggedna>span{
+    font-size: 1rem;
+}
+#headim{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(136, 136, 136);
+    display: none;
+    vertical-align: top;
+}
+#logpage{
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(32, 32, 32, 0.514);
+    opacity: 0;
+    position: fixed;
+    z-index: 3;
+    width: 0px;
+    border: 5px solid rgb(3, 19, 53)
+}
+#logchoice{
+    width: 300px;
+}
+#logchoice p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 30px;
+    border: 2px solid rgb(8, 55, 73);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 10px;
+}
+#login1{
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-bottom: 0;
+}
+#register1{
+    background-color: rgb(8, 55, 73);
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+#username{
+    margin-left: 22%;
+    margin-top: 10px;
+}
+#username *{
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+#password{
+    margin-left: 22%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#password *{
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+#password input{
+    margin-left: -1px;
+}
+#con-password{
+    margin-left: 11%;
+    margin-top: 10px;
+}
+#con-password *{
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+#con-password input{
+    margin-left: 3px;
+}
+#logbutton{
+    margin-left: 31%;
+    width: 40%;
+    height: 30px;
+    background-color: rgb(219, 81, 81);
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+#gray{
+    height: 5000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    background-color: rgb(29, 29, 29);
+    z-index: -1;
+}
+#closel{
+    font-weight: 500;
+    font-size: 30px;
+    float: right;
+    margin-top: -10px;
+    cursor: pointer;
+}
+#regchoice{
+    width: 300px;
+}
+#regchoice p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 30px;
+    border: 2px solid rgb(8, 55, 73);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 10px;
+}
+#login2{
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-bottom: 0;
+}
+#register2{
+    background-color: rgb(8, 55, 73);
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+#regbutton{
+    margin: 0 auto;
+    width: 180px;
+    height: 30px;
+    background-color: rgb(219, 81, 81);
+    margin-top: 7px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+#closer{
+    font-weight: 500;
+    font-size: 30px;
+    float: right;
+    margin-top: -10px;
+    cursor: pointer;
+}
+#aler{
+    display: none;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: red;
+    text-align: center;
+    margin: 0 20px;
+}
+#notsp{
+    background-color: red;
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: white;
+    display: none;
+}
+#namealr{
+    background-color: red;
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: white;
+    display: none;
+}
+#login{
+    cursor: pointer;
+}
+a{
+    text-decoration: none !important;
+}
+#localhdiv{
+    display: none;
+}
+#localhinp{
+    display: none;
+}
+#localhdivr{
+    display: none;
+}
+#localhinpr{
+    display: none;
+}
+#localsearchl{
+    display: none;
+}
+#topp{
+    position: fixed;
+    top: 90%;
+    z-index: 9;
+    z-index: 1000 !important;
+}
+#topi{
+    width: 8%;
+    cursor: pointer;
+}
+#showsearch{
+    display: none;
+}
+.bflog{
+    cursor: pointer;
+}

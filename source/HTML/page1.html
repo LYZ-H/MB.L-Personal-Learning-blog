@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv=“X-UA-Compatible” content=“chrome=1″ />
+        <meta name="keywords" content="MB.L,homepage,login,register">
+        <title>page1</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../material/picture/favicon.ico" />
+        <link rel="stylesheet" href="../CSS/jquery-ui.css">
+        <link rel="stylesheet" href="../CSS/bootstrap.css">
+        <link rel="stylesheet" href="../CSS/page1.css" type="text/css"/>
+    </head>
+    <body background="../material/picture/backimage.jpg">
+        <button id="showsearch" data-toggle="modal" data-target="#noresult"></button>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand">MB.L</a>
+                    <a href="/account">
+                        <div1 id="headim">
+                            <img id="imageaf" src="">
+                        </div1>
+                        <div1 id="loggedna">
+                            <span id="loggedname"><%= username %> </span> 
+                        </div1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="/page1">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/blogpage1">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bflog">Write</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            developer
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/aboutdeveloper">about developer</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="/aboutblog">about blog</a>
+                          </div>
+                        </li>
+                        <li class="nav-item" id="lognav">
+                            <a class="nav-link" id="login" >Login/Register</a>
+                        </li>
+                      </ul>
+                      <form action="/search" method="POST" class="form-inline my-2 my-lg-0">
+                        <input id="searchinp" class="form-control mr-sm-2" name="searchdata" type="text" placeholder="Search" aria-label="Search">
+                        <input id="searchbut" class="btn btn-outline-success my-2 my-sm-0" type="button" value="search">
+                        <input id="localsearchl" name="localhref">
+                      </form>
+                      
+                    </div>
+                  </nav>
+
+
+
+        <div id="gray"></div>
+        <div id='logpage'>
+            <div id="logcontain">
+                <p id="closel">x</p>
+                <div id="logchoice">
+                    <p id="login1">Login</p>
+                    <p id="register1">Register</p>
+                </div>
+                <div id="logmain">
+                    <form id="forml" action="/forml" method="POST">
+                        <div id="username">
+                            <p>User Name:</p>
+                            <input id="poname" type="text" name="username" size="20" maxlength="20" placeholder="User Name"/>
+                        </div>
+                        <div id="password">
+                            <p>Password:&nbsp&nbsp&nbsp</p>
+                            <input id="popassword" type="password" name="password" size="20" maxlength="20" placeholder="password"/>
+                        </div>
+                        <div id="localhdiv">
+                            <input id="localhinp" name="localhref">
+                        </div>
+                        <div id="aler">
+                            <p>Wrong name or password</p>
+                        </div>
+                        <div id="logbutton">
+                            <p>Login</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="gray"></div>
+            <div id="regcontainer">
+                <p id="closer">x</p>
+                <div id="regchoice">
+                    <p id="login2">Login</p>
+                    <p id="register2">Register</p>
+                </div>
+                <div id="regmain">
+                    <form id="formr" action="/formr" method="POST">
+                        <div id="username">
+                            <p>User Name:</p>
+                            <input id="nameinput" type="text" name="username" size="20" maxlength="20" placeholder="User Name"/>
+                        </div>
+                        <div id="password">
+                            <p>Password:&nbsp&nbsp&nbsp</p>
+                            <input id="passwordinput" type="password" name="password" size="20" maxlength="20" placeholder="password"/>
+                        </div>
+                        <div id="con-password">
+                            <p>Config Password:&nbsp&nbsp&nbsp</p>
+                            <input id="conpasswordinput" type="password" name="conpassword" size="20" maxlength="20" placeholder="password"/>
+                        </div>
+                        <div id="localhdivr">
+                            <input id="localhinpr" name="localhref">
+                        </div>
+                        <div id="notsp">
+                            <p>Two passwords are not same</p>
+                        </div>
+                        <div id="namealr">
+                            <p>This name has already be used</p>
+                        </div>
+                        <div id="regbutton">
+                            <p>Register</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Welcome back&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<p id="actime"></p></li>
+            </ol>
+          </nav>
+        <div class="containe">
+            <div class="list" id="imgcontain" style="left:0px;">
+                <img src="../material/picture/gettyimages_486109654_super_resized.jpg" alt="1"/>
+                <img src="../material/picture/10_gettyimages_668268066_high_resized.jpg" alt="2"/>
+                <img src="../material/picture/11_gettyimages-490639794_super_resized.jpg" alt="3"/>
+                <img src="../material/picture/07_gettyimages_698201920_super_resized.jpg" alt="4"/>
+                <img src="../material/picture/06_gettyimages_640177048_super_resized.jpg" alt="5"/>
+            </div>
+            <div class="pointer">
+                <span index="1" class="on"></span>
+                <span index="2"></span>
+                <span index="3"></span>
+                <span index="4"></span>
+                <span index="5"></span>
+            </div>
+            <a id="a1" class="arrow left">&lt;</a>
+            <a id="a2" class="arrow right">&gt;</a>
+        </div>
+        <div id="main1" class="container-fluid row">
+            <div1 id="newslo" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                <div id="blog-news">
+                    <p>News</p>
+                </div>
+                <div class="list-group">
+                    <a href="../HTML/news/news1.html" class="list-group-item list-group-item-action">"one country, two systems" in Macao</a>
+                    <a href="../HTML/news/news2.html" class="list-group-item list-group-item-action">Trump signs controversial defense bill</a>
+                    <a href="../HTML/news/news3.html" class="list-group-item list-group-item-action">Rwanda's National Commission</a>
+                    <a href="../HTML/news/news4.html" class="list-group-item list-group-item-action">Cross-border humanitarian relief</a>
+                    <a href="../HTML/news/news5.html" class="list-group-item list-group-item-action">China's banking and insurance</a>
+                    <a href="../HTML/news/news6.html" class="list-group-item list-group-item-action">China will roll out policies</a>
+                    <a href="../HTML/news/news7.html" class="list-group-item list-group-item-action">Greek Culture and Sports Minister Lina Mendoni</a>
+                    <a href="../HTML/news/news8.html" class="list-group-item list-group-item-action">exhibition featuring China's traditional 24 solar terms</a>
+                    <a href="../HTML/news/news9.html" class="list-group-item list-group-item-action">Fuxin in northeast China</a>
+                  </div>
+            </div1>
+            <div id="blog" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+                <div id="blog-title">
+                    <p><a href="/blogpage1">Latest Blogs</a></p>
+                </div>
+                <div id="blog-main" >
+                    <p id="headblogtitle"></p>
+                </div>
+            </div>
+            <div1 id="afnews" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+            </div1>
+            <div id="til" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-3">
+                <div id="blog-logo">
+                    <p>Logo</p>
+                </div>
+                <div id="he-plugin-simple"></div>
+                <script>
+                WIDGET = {
+                CONFIG: {
+                    "modules": "01234",
+                    "background": 1,
+                    "tmpColor": "FFFFFF",
+                    "tmpSize": 16,
+                    "cityColor": "FFFFFF",
+                    "citySize": 16,
+                    "aqiSize": 16,
+                    "weatherIconSize": 24,
+                    "alertIconSize": 18,
+                    "padding": "100px 20px 80px 20px",
+                    "shadow": "1",
+                    "language": "en",
+                    "borderRadius": 5,
+                    "fixed": "false",
+                    "vertical": "middle",
+                    "horizontal": "center",
+                    "key": "ea76591cf1174645a10743c8e4ff9e01"
+                }
+                }
+                </script>
+                <div id=ti>
+                    <div id="month"></div>
+                    <div id="date"></div>
+                    <div id="day"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="jumbotron col-xs-11 col-sm-11 col-xl-7" id="writetext">
+                        <h1 class="display-4">Hello!</h1>
+                        <p class="lead">This is a personal learning blog, you can write anything you like.</p>
+                        <hr class="my-4">
+                        <p>Before writing, you should have an account first.</p>
+                        <p class="bflog btn btn-primary btn-lg" href="/write" role="button">Click to write your blogs</p>
+                      </div>
+                      <div class="list-group col-xs-12 col-sm-12 col-xl-4" id="blogdata">
+                        <button type="button" class="list-group-item list-group-item-action active">
+                          information
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action" disabled>Blog number<h2 id="allblogsnumber"></h2></button>
+                        <button type="button" class="list-group-item list-group-item-action" disabled>User number<h2 id="lousernum"></h2></button>
+                        <button type="button" class="list-group-item list-group-item-action" disabled>Daily blogs<h2 id="dailyblognum"></h2></button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="noresult" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">No result</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    No result, Please try to use full word search
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <script src="../JS/jquery.js"></script>
+        <script src="../JS/bootstrap.js"></script>
+        <script src="../JS/jQuery_Color_Animations.js"></script>
+        <script type="text/javascript" src="../JS/page1.js"></script>
+        <script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
+    </body>
+</html>

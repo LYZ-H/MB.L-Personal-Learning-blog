@@ -1,0 +1,701 @@
+body{
+    min-height: 1700px;
+    margin: 0 0;
+    background-color: #b8c9e0;
+}
+#header{
+    width: 100%;
+    height: 12%;
+    background-color: #006494;
+    white-space:nowrap; 
+    min-width: 1000px;
+}
+#header div{
+    display: inline-block;
+}
+#header div p{
+    display: inline-block;
+}
+#left-head{
+    margin-left: 20px;
+    margin-right: 320px;
+    width: 600px;
+    vertical-align: top;
+}
+#left-head>p{
+    margin: 0 20px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+    height: 48px;
+    line-height: 48px;
+}
+#middle-head{
+    vertical-align: top;
+    margin-top: 12px;
+}
+#middle-head input{
+    height: 20px;
+    width: 200px;
+}
+#right-head{
+    margin-right: 2px;
+    vertical-align: top;
+}
+#right-head p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    margin: 0 10px;
+    margin-right: 2%;
+    cursor: pointer;
+    height: 48px;
+    line-height: 48px;
+}
+a{
+    overflow: hidden !important;
+    white-space:nowrap !important;
+}
+#logo{
+    text-align: center;
+    margin-top: 20px;
+}
+#welcome{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: rgb(3, 10, 34);
+    text-align: center;
+}
+
+#main1{
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+}
+#main1>div{
+    display: inline-block;
+    height: 500px;
+    width: 20%;
+    vertical-align: top;
+    margin-top: 1%;
+    padding: 1%;
+}
+#blog-title{
+    background-color: teal;
+    height: 50px;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+#blog-news{
+    background-color: rgb(70, 150, 54);
+    height: 50px;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+#newslo{
+    display: none;
+    height: 500px;
+    width: 20%;
+    vertical-align: top;
+    margin-top: 1%;
+    padding: 1%;
+}
+#blog-logo{
+    background-color: rgb(184, 173, 19);
+    height: 50px;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+#state{
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#state>div1{
+    background-color: rgb(73, 193, 223);
+    display: inline-block;
+    width: 9%;
+    height: 130px;
+    margin: 0 1px;
+    vertical-align: top;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+#state>div1>p{
+    margin-top: 44px;
+}
+#state>div1>h1{
+    margin-top: 10%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+#state>div2{
+    background-color: rgb(103, 223, 73);
+    display: inline-block;
+    width: 9%;
+    height: 130px;
+    margin: 0 1px;
+    vertical-align: top;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+#state>div2>p{
+    margin-top: 44px;
+}
+#state>div2>h1{
+    margin-top: 10%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+#state>div3{
+    background-color: rgb(151, 73, 223);
+    display: inline-block;
+    width: 9%;
+    height: 130px;
+    margin: 0 1px;
+    vertical-align: top;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+#state>div3>p{
+    margin-top: 20px;
+}
+#state>div3>h1{
+    margin-top: 10%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+#state>div4{
+    background-color: rgb(223, 183, 73);
+    display: inline-block;
+    width: 9%;
+    height: 130px;
+    margin: 0 1px;
+    vertical-align: top;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+#state>div4>p{
+    margin-top: 44px;
+}
+#state>div4>h1{
+    margin-top: 10%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+#state>div5{
+    background-color: rgb(57, 54, 179);
+    display: inline-block;
+    width: 9%;
+    height: 130px;
+    margin: 0 1px;
+    vertical-align: top;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+#state>div5>p{
+    margin-top: 20px;
+}
+#state>div5>h1{
+    margin-top: 10%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+.lo-num{
+    margin-top: 6px;
+}
+#left-logo{
+    background-color: rgb(48, 135, 156);
+    display: inline-block;
+    width: 41.8%;
+    height: 590px;
+    margin: 0 1px;
+    margin-left: 1.4%;
+    vertical-align: top;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+}
+#left-logo div{
+    display: inline-block;
+}
+#left-logo p{
+    margin-top: 60px;
+}
+#left-logo a{
+    text-decoration: none;
+    color: white;
+}
+#Clicklog{
+    background-color: #e93d3d;
+    width: 170px;
+    margin: 0 auto;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px 8px 8px 8px;
+    cursor: pointer;
+}
+#Clickwrite{
+    background-color: #e93d3d;
+    width: 470px;
+    margin: 0 auto;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 8px 8px 8px 8px;
+    cursor: pointer;
+}
+#main2{
+    display: inline-block;
+}
+#state>div7{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 20%;
+    top: 1075px;
+    width: 730px;
+    height: 430px;
+    margin: 0 1px;
+    vertical-align: top;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    border:6px solid rgb(48, 135, 156);
+}
+#board-title{
+    background-color: rgb(136, 94, 235);
+    color: rgb(48, 48, 48);
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    border: 3px solid rgb(36, 54, 92);
+    margin: 2px 2px;
+}
+#month{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    margin: 0 10px;
+}
+#date{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    margin: 0 10px;
+}
+#day{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: white;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+*{
+    padding:0;
+    margin:0;
+}
+.containe{
+    width:90%;
+    height:400px;
+    overflow: hidden;
+    position:relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: none;
+}
+.list{
+    width: 500%;
+    height:400px;
+    position:absolute;
+}
+.list img{
+    float:left;
+    width:20%;
+    height:400px;
+}
+.pointer{
+    position:absolute;
+    width: 18%;
+    bottom:20px;
+    left:43%;
+}
+.pointer span{
+    cursor:pointer;
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background: #7b7d80;
+    border-radius:50%;
+    border:1px solid #fff;
+    margin: 0 4%;
+}
+.pointer .on{
+    background: #28a4c9;
+}
+.arrow{
+    position:absolute;
+    text-decoration:none;
+    width:40px;
+    height:40px;
+    background: #727d8f;
+    color:white;
+    font-weight: bold;
+    line-height:40px;
+    text-align:center;
+    top:180px;
+    display:none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.arrow:hover{
+    background: #0f0f0f;
+    cursor: pointer;
+    color:white;
+}
+.left{
+  left:0;
+}
+.right{
+    right:0;
+}
+#a1{
+    color: white;
+}
+#a2{
+    color: white;
+}
+.containe:hover .arrow{
+    display:block;
+}
+#logpage{
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(32, 32, 32, 0.514);
+    opacity: 0;
+    position: fixed;
+    z-index: 3;
+    width: 0px;
+    border: 5px solid rgb(3, 19, 53)
+}
+#logchoice{
+    width: 300px;
+}
+#logchoice p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 30px;
+    border: 2px solid rgb(8, 55, 73);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 10px;
+}
+#login1{
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-bottom: 0;
+}
+#register1{
+    background-color: rgb(8, 55, 73);
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+#username{
+    margin-left: 22%;
+    margin-top: 10px;
+}
+#username *{
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+#password{
+    margin-left: 22%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#password *{
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+#password input{
+    margin-left: -1px;
+}
+#con-password{
+    margin-left: 11%;
+    margin-top: 10px;
+}
+#con-password *{
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+#con-password input{
+    margin-left: 3px;
+}
+#logbutton{
+    margin-left: 31%;
+    width: 40%;
+    height: 30px;
+    background-color: rgb(219, 81, 81);
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+#gray{
+    height: 5000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    background-color: rgb(29, 29, 29);
+    z-index: -1;
+}
+#closel{
+    font-weight: 500;
+    font-size: 30px;
+    float: right;
+    margin-top: -10px;
+    cursor: pointer;
+}
+#regchoice{
+    width: 300px;
+}
+#regchoice p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 30px;
+    border: 2px solid rgb(8, 55, 73);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 10px;
+}
+#login2{
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-bottom: 0;
+}
+#register2{
+    background-color: rgb(8, 55, 73);
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+#regbutton{
+    margin: 0 auto;
+    width: 180px;
+    height: 30px;
+    background-color: rgb(219, 81, 81);
+    margin-top: 7px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+#closer{
+    font-weight: 500;
+    font-size: 30px;
+    float: right;
+    margin-top: -10px;
+    cursor: pointer;
+}
+#loggedna{
+    margin-top: 8px !important;
+    display: none;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 20%;
+}
+#loggedna>span{
+    font-size: 1rem;
+}
+#headim{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(136, 136, 136);
+    display: none;
+    vertical-align: top;
+}
+#aler{
+    display: none;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: red;
+    text-align: center;
+    margin: 0 20px;
+}
+#notsp{
+    background-color: red;
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: white;
+    display: none;
+}
+#namealr{
+    background-color: red;
+    text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: white;
+    display: none;
+}
+a{
+    color: white;
+}
+.blogtitlein{
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-top: -10px;
+    z-index: 5;
+}
+#lg{
+    margin-right: 0;
+}
+#writetext{
+    display: inline-block;
+    margin: 3% 2%;
+}
+#blogdata{
+    display: inline-block;
+    margin-top: 3%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 2%;
+}
+a{
+    text-decoration: none !important;
+}
+#login{
+    cursor: pointer;
+}
+#actime{
+    float: right;
+}
+#localhdiv{
+    display: none;
+}
+#localhinp{
+    display: none;
+}
+#localhdivr{
+    display: none;
+}
+#localhinpr{
+    display: none;
+}
+#localsearchl{
+    display: none;
+}
+#main1 a{
+    overflow: auto !important
+}
+#afnews{
+    display: none;
+    height: 500px;
+    width: 20%;
+    vertical-align: top;
+    margin-top: 1%;
+    padding: 1%;
+}
+#showsearch{
+    display: none;
+}
+.bflog{
+    cursor: pointer;
+}

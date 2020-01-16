@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>write</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="keywords" content="writeblog,submit,ueditor">
+    <link rel="stylesheet" href="../CSS/jquery-ui.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/write.css" type="text/css"/>
+</head>
+<body background="../material/picture/backimage.jpg">
+    <button id="showsearch" data-toggle="modal" data-target="#noresult"></button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">MB.L</a>
+        <a href="/account">
+            <div1 id="headim">
+                <img id="imageaf" src="">
+            </div1>
+            <div1 id="loggedna">
+                <span id="loggedname"></span>
+            </div1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/page1">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blogpage1">Blogs</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/write">Write</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                developer
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/aboutdeveloper">about developer</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/aboutblog">about blog</a>
+              </div>
+            </li>
+            <li class="nav-item" id="lognav">
+                <a class="nav-link" id="login" >Login/Register</a>
+            </li>
+          </ul>
+          <form action="/search" method="POST" class="form-inline my-2 my-lg-0">
+            <input id="searchinp" class="form-control mr-sm-2" name="searchdata" type="text" placeholder="Search" aria-label="Search">
+            <input id="searchbut" class="btn btn-outline-success my-2 my-sm-0" type="button" value="search">
+            <input id="localsearchl" name="localhref">
+          </form>
+          
+        </div>
+      </nav>
+      <div id="gray"></div>
+        <div id='logpage'>
+            <div id="logcontain">
+                <p id="closel">x</p>
+                <div id="logchoice">
+                    <p id="login1">Login</p>
+                    <p id="register1">Register</p>
+                </div>
+                <div id="logmain">
+                    <form id="forml" action="/forml" method="POST">
+                        <div id="username">
+                            <p>User Name:</p>
+                            <input id="poname" type="text" name="username" size="20" maxlength="20" placeholder="User Name"/>
+                        </div>
+                        <div id="password">
+                            <p>Password:&nbsp&nbsp&nbsp</p>
+                            <input id="popassword" type="password" name="password" size="20" maxlength="20" placeholder="password"/>
+                        </div>
+                        <div id="localhdiv">
+                            <input id="localhinp" name="localhref">
+                        </div>
+                        <div id="aler">
+                            <p>Wrong name or password</p>
+                        </div>
+                        <div id="logbutton">
+                            <p>Login</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="gray"></div>
+            <div id="regcontainer">
+                <p id="closer">x</p>
+                <div id="regchoice">
+                    <p id="login2">Login</p>
+                    <p id="register2">Register</p>
+                </div>
+                <div id="regmain">
+                    <form id="formr" action="/formr" method="POST">
+                        <div id="username">
+                            <p>User Name:</p>
+                            <input id="nameinput" type="text" name="username" size="20" maxlength="20" placeholder="User Name"/>
+                        </div>
+                        <div id="password">
+                            <p>Password:&nbsp&nbsp&nbsp</p>
+                            <input id="passwordinput" type="password" name="password" size="20" maxlength="20" placeholder="password"/>
+                        </div>
+                        <div id="con-password">
+                            <p>Config Password:&nbsp&nbsp&nbsp</p>
+                            <input id="conpasswordinput" type="password" name="conpassword" size="20" maxlength="20" placeholder="password"/>
+                        </div>
+                        <div id="notsp">
+                            <p>Two passwords are not same</p>
+                        </div>
+                        <div id="namealr">
+                            <p>This name has already be used</p>
+                        </div>
+                        <div id="regbutton">
+                            <p>Register</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <input id="btitle" type="text" name="blogtitle" size="30" maxlength="100" placeholder="Title"/>
+<div>
+    <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+</div>
+<div id="btns">
+<button id="bbut" onclick="getContent()">Submit</button>
+<p id="successful">Submit successful</p>
+<p id="failed">Submit failed</p>
+</div>
+<div class="modal fade" id="noresult" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">No result</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            No result, Please try to use full word search
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="../JS/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../ueditor/ueditor.all.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="../ueditor/lang/zh-cn/zh-cn.js"> </script>
+    <script src="../JS/jQuery_Color_Animations.js"></script>
+    <script src="../JS/bootstrap.js"></script>
+<script type="text/javascript" src="../JS/write.js">       </script>
+</body>
+</html>
